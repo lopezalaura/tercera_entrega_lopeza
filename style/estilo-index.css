@@ -1,0 +1,375 @@
+/* correcciones generales. margenes, listas, fuente, otros */
+* {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+i {
+    color: #fff;
+}
+
+
+/* nav */
+
+.nav {
+    background-color: #F4896B;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.nav .nav_primero, .nav_ultimo {
+    margin: 1em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+}
+
+.nav .nav_primero {
+    column-gap: 1em;
+    grid-template-columns: repeat(4, auto);
+}
+
+.nav .nav_primero .img_logo_principal {
+    height: 2em;
+}
+
+.nav .nav_primero .nav_pagina:hover::after {
+    font-family:'Bootstrap-icons';
+    content: "\F22C";
+    padding: 0 0 0 0.2em;
+    vertical-align: -0.2em;
+}
+
+.nav .nav_ultimo {
+    justify-items: right;
+}
+
+.nav .nav_ultimo i {
+    cursor: pointer;
+}
+
+.nav .nav_ultimo .logo_persona:hover::after {
+    font-family:'Bootstrap-icons';
+    content: "\F138";
+    padding: 0 0 0 0.2em;
+    vertical-align: -0.2em;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* presentacion pagina */
+
+.presentacion {
+    text-align: center;
+    margin: 15% 0;
+}
+
+.presentacion .presentacion_imagen-helado {
+    height: 7em;
+    padding: 1em;
+    vertical-align: -2em;
+}
+
+.presentacion .presentacion_nombre_empresa {
+    font-family: 'Carattere', cursive;
+    font-size: 7em;
+    color: #04C4D9;
+}
+
+.presentacion .presentacion_antiguedad {
+    font-size: 2em;
+    letter-spacing: 0.5em;
+}
+
+/* introduccion empresa */
+
+.sectionCarrusel {
+    background-image: url(../imagenes/fondo-letras.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.sectionCarrusel .introduccion_empresa {
+    text-align: center;
+    padding: 2em 0;
+    margin: 0;
+    color: #F4896B;
+    font-size: 2rem;
+    width: 100%;
+    backdrop-filter: blur(5px);
+}
+
+
+.sectionCarrusel .introduccion_empresa .lema {
+    font-family: 'Carattere', cursive;
+    font-size: 6rem;
+    letter-spacing: 0.2em;
+    padding: 0.5em;
+    text-decoration: double;
+}
+
+
+/* intento de carrusel */
+
+.sectionCarrusel .carrousel {
+    width: 100%;
+    padding: 1rem 0;
+    box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+.sectionCarrusel .carrousel .carrousel-contenedor .carrousel-elemento {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#carrousel-imagen-2, #carrousel-imagen-3, #carrousel-imagen-4, #carrousel-imagen-5, #carrousel-imagen-6 {
+    display: none;
+}
+
+.sectionCarrusel .carrousel .carrousel-contenedor .carrousel-elemento .carrousel-imagen {
+    border-radius: 4rem;
+    margin: 1rem;
+    width: 100%;
+}
+
+/* navegador puntitos */
+
+.sectionCarrusel .carrousel .carrousel-contenedor .carrousel-nav i {
+    color: #F4896B;
+    letter-spacing: 1em;
+    font-size: 0.5em;
+    cursor: pointer;
+}
+
+.sectionCarrusel .carrousel .carrousel-contenedor .carrousel-nav i:hover {
+    color: #04C4D9;
+    transition: 1s;
+}
+
+
+/* conocer mas */
+
+.irPaginaEmpresa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2em;
+    margin: 5em 0;
+    color: #F4896B;
+    font-weight: 400;
+}
+
+.irPaginaEmpresa .lin_acceder {
+    margin: 2em 0;
+}
+
+.irPaginaEmpresa .lin_acceder a {
+    background-color: #F4896B;
+    padding: 0.5em;
+    border-radius: 1em;
+    box-shadow: 0 0 0.1em 0 rgba(0, 0, 0, 0.5);
+}
+
+.irPaginaEmpresa .lin_acceder .bi.bi-chevron-double-right {
+    font-size: 0.7em;
+}
+
+.irPaginaEmpresa .lin_acceder a:hover {
+    padding: 0.5em 1em;
+    transition: 0.5s linear;
+    letter-spacing: 0.1em;
+}
+
+
+/* registrarse */
+
+
+.irRegistrarse {
+    margin: 6rem 0;
+    padding: 2rem 0;
+    font-size: 2rem;
+    background-color: #FFB8A1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.irRegistrarse .irRegistrarseContainer {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 1em;
+    text-align: center;
+}
+
+.irRegistrarse .irRegistrarseContainer .irRegistrarseContainer3 {
+    font-size: 1.5rem;
+    background-color: #fff;
+    color: #F4896B;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.1rem;
+    box-shadow: 0 0 0.1rem 0 #969696;
+    padding: 0.2rem;
+    cursor: pointer;
+}
+
+/* pie de pagina */
+
+.seguinos {
+    color: #04C4D9;
+    font-weight: 800;
+    letter-spacing: 0.5em;
+}
+
+.redes {
+    display: grid;
+    grid-template-rows: auto 6fr;
+    text-align: center;
+    margin: 5rem 0;
+    gap: 4rem 0;
+    font-size: 1.5rem;
+}
+
+.redes-par {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em 1em;
+    margin: 1em 2em;
+}
+
+.redes-par div {
+    background-color: #04C4D9;
+    box-shadow: 0 1em 0 0 #72DBF2;
+    border-radius: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+/*footer*/
+footer {
+    background-color: #F4896B;
+    text-align: center;
+    color: #fff;
+}
+
+.container_footer{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: 'Carattere', cursive;
+}
+
+.redes_footer{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.nombre_footer{
+    font-family: 'Carattere', cursive;
+}
+
+
+/* empiezan los ajustes de pantalla */
+
+
+@media (max-width: 1215px) {
+    .presentacion .presentacion_antiguedad {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 1150px) {
+
+    .sectionCarrusel .introduccion_empresa .lema {
+        font-size: 4.5rem;
+    }
+}
+
+
+/* pantallas hasta 922pixeles */
+
+@media (max-width: 922px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    @media (max-width: 922px) {
+        footer {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+    /* navegador */
+    .nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav .navSpace {
+    display: none;
+    }
+
+    .nav .nav_primero, .nav_ultimo {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+    }
+
+    .presentacion .presentacion_antiguedad {
+        font-size: 1rem;
+    }
+
+
+    /* redireccion a pagina de empresa */
+    .irPaginaEmpresa {
+        text-align: center;
+    }
+
+    .redes {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .redes .redes-par {
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 4rem;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .redes .redes-par div {
+        padding: 3rem;
+    }
+}
