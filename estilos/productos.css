@@ -1,5 +1,5 @@
-
 {
+    margin: 0;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -152,21 +152,24 @@ footer {
 }
 
 .container_footer{
-    display: flex;
-    justify-content: space-around;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 .redes_footer{
-    display: flex;
-    justify-content: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em 1em;
+    margin: 1em 2em;
 }
 
 .nombre_footer{
     font-family: 'Carattere', cursive;
 }
+
 .subtitulo {
     font-size: 20px;
 }

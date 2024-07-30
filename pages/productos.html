@@ -14,6 +14,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Cantarell&family=Carattere&family=Gruppo&family=Quattrocento+Sans&family=Roboto+Condensed:wght@300&family=Roboto:wght@100&family=Stint+Ultra+Expanded&display=swap" rel="stylesheet">
     <title>El Arte Helados</title>
     <link rel="shortcut icon" href="imagenes/logo_helado_celeste.ico">
+    <style>
+        body {
+          margin: 0;
+        }
+        .form-container {
+          max-width: 500px;
+          width: 100%;
+          padding: 20px;
+          border: 1px solid #dee2e6;
+          border-radius: 5px;
+          background-color: white;
+          text-align: center;
+          margin: 20px auto;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-label,
+        .btn {
+          color: #00bcd4; /* Celeste clarito */
+        }
+        .form-label {
+          font-weight: bold;
+        }
+        .btn {
+          background-color: #F4896B;
+          border-color: #F4896B;
+          color: white; /* Letras blancas */
+        }
+        .form-group {
+          margin-bottom: 20px; /* Espacio entre los elementos */
+        }
+        .form-select,
+        .form-control {
+          margin-bottom: 20px; /* Espacio adicional entre campos */
+        }
+      </style>
   </head>
 
   <!-- informacion para css: 
@@ -78,6 +113,44 @@
     </header>
     <section class="sabores" id="listasabores">
         <p class="nuestros_sabores">Nuestros Sabores</p>
+        <section class="form-container">
+            <h2 class="text-center" style="color: #00bcd4;">Elige tus Sabores</h2>
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label for="tipoHelado" class="form-label">Tipo de Helado</label>
+                <select id="tipoHelado" class="form-select">
+                  <option selected>Seleccione el tipo de helado...</option>
+                  <option>Helado al Agua</option>
+                  <option>Helado con Crema</option>
+                  <option>Sin TACC</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="cantidadHelado" class="form-label">Cantidad</label>
+                <select id="cantidadHelado" class="form-select">
+                  <option selected>Seleccione la cantidad...</option>
+                  <option>Un cuarto</option>
+                  <option>Medio kilo</option>
+                  <option>Un kilo</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="sabor1" class="form-label">Sabor 1</label>
+                <input type="text" class="form-control" id="sabor1" placeholder="Ingrese el primer sabor">
+              </div>
+              <div class="col-md-6">
+                <label for="sabor2" class="form-label">Sabor 2</label>
+                <input type="text" class="form-control" id="sabor2" placeholder="Ingrese el segundo sabor">
+              </div>
+              <div class="col-md-6">
+                <label for="sabor3" class="form-label">Sabor 3</label>
+                <input type="text" class="form-control" id="sabor3" placeholder="Ingrese el tercer sabor">
+              </div>
+              <div class="col-12 text-center">
+                <button type="submit" class="btn btn-primary">Elegir</button>
+              </div>
+            </form>
+          </section>
         <div class="lista_sabores">
             <div class="listas_particulares">
                 <p class="listas">Cremas</p>
@@ -152,6 +225,7 @@
         </div>
     </section>
     <article>
+        <p class="nuestros_sabores">Más Productos</p>
         <div class="mas_productos">
         <div class="tipo_producto">
             <p class="tacc">Sin Tacc</p>
@@ -213,11 +287,6 @@
                <li>
                    <a href="https://www.tiktok.com/" title="Tiktok">
                        <i class="bi bi-tiktok"></i>
-                   </a>
-               </li>
-               <li class="logo_persona" title="Ingresar">
-                   <a>
-                       <i class="bi bi-person"></i>
                    </a>
                </li>
              </ul> 
